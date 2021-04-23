@@ -28,7 +28,7 @@ while True:
         while True:
             username_header = client_socket.recv(HEADER_LENGTH)
             if not len(username_header):
-                print("Wypierdalaj") #ZMIENIC NA CONNECTION LOST!!!!
+                print("CONNECTION LOST!")
                 exit()
 
             username_length = int(username_length.decode("utf-8").strip())
